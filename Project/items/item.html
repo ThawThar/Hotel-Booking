@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">FriendShip Hotel</title>
+    <link rel="stylesheet" type="text/css" href="item.css">
+    <script type="text/javascript" src="item.js"></script>
+    <link rel="icon" type="image/x-icon" href="../image/hotel.png">
+
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <h2 id="hotelName"></h2>
+    <ul>
+        <li>Free Cancellation</li>
+        <li>Breakfast Included</li>               
+        <li>Swimming Pool Included</li>
+        <li>No Prepayment Needed</li>
+    </ul>
+
+        <div class="left">
+            
+                <img src="../image/loading.gif" style="width: 370px; height: 500px; border-radius: 10px;" 
+                id="leftone" onload="readImage()">
+            
+                <img src="../image/loading.gif" style="width:370px; height: 500px; border-radius: 10px;" 
+                id="lefttwo" onload="readImage()">
+
+                <img src="../image/loading.gif" style="width: 370px; height: 500px; border-radius: 10px;" 
+                id="leftthree" onload="readImage()">
+
+                <img src="../image/loading.gif" style="width: 370px; height: 500px; border-radius: 10px;" 
+                id="leftfour" onload="readImage()">
+
+                <img src="../image/loading.gif" style="width: 370px; height: 500px; border-radius: 10px;" 
+                id="leftfive" onload="readImage()">
+
+                <img src="../image/loading.gif" style="width: 370px; height: 500px; border-radius: 10px;" 
+                id="leftsix" onload="readImage()">
+            
+        </div>
+        
+
+
+        <div class="section">
+            <div class="pic"><img src="../image/bk1.jpg" style="width: 500px; height: 400px; border-radius: 10px;"></div>
+            <div class="booking">
+                <h2 style="text-align: center;">Book Here!</h2>
+            <table class="booking_table">
+                    <tr>
+                        <th><label for="fromdate">From Date:</label></th>
+                        <th><input type="date" id="fromdate"></th>
+                    </tr>
+
+                    
+            
+                    <tr>
+                        <th><label for="Rtype">Room Type:</label></th>
+                        <th>
+                            <select id="roomType" onclick="pricefun()">
+                                <option id="single">Single Room</option>
+                                <option id="twin">Twin Room</option>
+                                <option id="family">Family Room</option>
+                            </select>
+                        </th>
+                    </tr>
+            
+                    <tr>
+                        <th><label for="price">Price per Night:</label></th>
+                        <th><input type="text" id="price"></th>
+                    </tr>
+            
+                    <tr>
+                        <th><label for="totalroom">Total Room:</label></th>
+                        <th>
+                            <input type="button" onclick="count('-')" id="n" value="-">
+                            <input type="number" value="1" id="amount">
+                            <input type="button" onclick="count('+')" id="p" value="+">
+                        </th>
+                    </tr>
+            
+                    <tr>
+                        <th><input type="button" onclick="ssbooking()" value="Booking"></th>
+                        <th><input type="button" onclick="cancel()" value="Cancel"></th>
+                    </tr>
+            
+                </table>
+            </div>
+
+
+            
+        </div>
+       
+
+        <div class="contact">
+            <div class="left_contact">
+                <h2>Contact Us</h2>
+                <ul type="none">
+                        <li class="ph-no">
+                            <i class="bi bi-telephone-fill"></i>
+                            +959450116193</li>
+                        <li class="gmail">
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:thawtharshin@gmail.com">Send Email</a></li>
+                        <li class="facebook">
+                            <i class="bi bi-facebook"></i>
+                            Cheng Gan</li>
+                            
+                </ul>
+            </div>
+                <div class="information">
+                <h2>Information</h2>
+                <ul type="none">
+                    <li>Find/Print Your Booking</li>
+                    <li>How to open MPU Ecommerce</li>
+                    <li>How to book using Mobile Banking</li>
+                </ul>
+            </div>	
+
+            <div class="legal">
+                <h2>Legal</h2>
+                <ul type="none">
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+                
+
+
+</body>
+</html>
